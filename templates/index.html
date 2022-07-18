@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <title>Index</title>
+</head>
+<body>
+    <center>
+        <h1>Subscribe Form</h1>
+        <h3 style = 'font-size: 50px;'>SMTP : </h3>
+    <form  action="{% url 'subscribe' %}" method="POST">
+        {% csrf_token %}
+        <div>
+            <p>
+            <h3>{{ form.as_p }}</h3>
+        </p>
+            <br>
+            <input type="submit" name="Subscribe" class = 'btn btn-primary btn-lg'>
+                </div>
+            </form>
+        </center>
+</body>
+</html>
